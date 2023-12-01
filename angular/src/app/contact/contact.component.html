@@ -1,0 +1,38 @@
+<section>
+  <h1>Contact me</h1>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="row">
+          <div class="col-12 mb-2">
+            <label>Name</label>
+            <input #txtName class="form-control" placeholder="Enter The Name...">
+          </div>
+          <div class="col-12 mb-2">
+            <label>Email</label>
+            <input #txtEmail class="form-control" placeholder="Enter The Email...">
+          </div>
+          <div class="col-12 mb-2">
+            <label>Description</label>
+            <textarea #txtDescription class="form-control" placeholder="Enter The Description..."></textarea>
+          </div>
+          <div class="col-12 mb-4">
+            <button (click)="sendForm()" class="btn btn-primary" *ngIf="!isCallingApi; else Loading">Click to send</button>
+            <ng-template #Loading>
+              <div class="spinner-border" role="status"></div>
+            </ng-template>
+          </div>
+          <div class="col-12 mb-4" *ngIf="isSubmitted">
+            <div class="alert alert-success">
+              <ul>
+                <li>{{name}}</li>
+                <li>{{email}}</li>
+                <li>{{dis}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

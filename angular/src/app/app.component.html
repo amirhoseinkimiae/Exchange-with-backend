@@ -1,0 +1,28 @@
+<!-- Navbar & Hero Start -->
+<div class="position-relative p-0">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+      <div class="container">
+        <a href="#" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-center"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="ms-auto text-cente navbar-nav">
+            <li class="nav-item "><a class="text-light nav-link" routerLinkActive="active" routerLink="/home">home</a></li>
+            <li class="nav-item "><a class="text-light nav-link" routerLinkActive="active" routerLink="/about">about</a></li>
+            <li class="nav-item "><a class="text-light nav-link" routerLinkActive="active" routerLink="/contact">contact</a></li>
+            <li class="nav-item "><a class="text-light nav-link" routerLinkActive="active" routerLink="/post">post</a></li>
+            <li class="nav-item "><a class="text-light nav-link" routerLinkActive="active" routerLink="/gollery">Gollery</a></li>
+          </ul>
+        </div> 
+      </div>
+  </nav>
+</div>
+<!-- Navbar & Hero End -->
+
+
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>
